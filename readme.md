@@ -1,13 +1,17 @@
-### 编译ts
+### 编译 ts
+
 ```
-tsc dayxxx.ts --watch
+tsc xxx.ts --watch
 ```
-### 执行js
+
+### 执行 js
+
 ```
-node dayxxx.js
+node xxx.js
 ```
 
 ### 第三方插件
+
 ```
-ts-node dayxxx.ts
+ts-node xxx.ts
 ```
