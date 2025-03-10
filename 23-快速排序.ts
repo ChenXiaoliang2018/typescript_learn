@@ -29,11 +29,17 @@ function quickSort(nums: number[], left: number, right: number): void {
   }
 }
 
-let arr = [];
-for (let index = 0; index <= 20; index++) {
-  arr.push(Math.floor(Math.random() * 100));
-}
+// 测试
+let arr = Array.from({ length: 10 }).reduce((acc: number[]) => {
+  acc.push(Math.floor(Math.random() * 100 + 1));
+  return acc;
+}, []);
+console.log("🚀 ~ arr ~ arr:", arr);
 
-console.log("🚀 ~ arr:", arr);
+const t1 = performance.now();
 quickSort(arr, 0, arr.length - 1);
-console.log("🚀 ~ arr:", arr);
+const t2 = performance.now();
+
+const diff = t2 - t1;
+console.log("🚀 ~ diff:", diff);
+console.log("🚀 ~ arr ~ arr:", arr);
